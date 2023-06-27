@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Logic Test</title>
+		<title>Array Test</title>
 		<script src="script.js"></script>
 	</head>
 	<body
@@ -18,28 +18,26 @@
 			background-color: wheat;
 		"
 	>
-		<h1>Logic Test</h1>
+		<h1>Array Test</h1>
 		<main style="border: 10px dashed black; padding: 10px;">
-			<h2>Number is Prime</h2>
-			<p>
-				<input type="number" id="prime-number" placeholder="Enter a number" />
-				<button onclick="isPrime()">Check</button>
-			</p>
-			<p id="prime-result">Check to see your result</p>
-
-			<h2>Word is Palindrome</h2>
-			<p>
-				<input type="text" id="palindrome-word" placeholder="Enter a word" />
-				<button onclick="isPalindrome()">Check</button>
-			</p>
-			<p id="palindrome-result">Check to see your result</p>
-
-			<h2>Year is Leap Year</h2>
-			<p>
-				<input type="number" id="leap-year" placeholder="Enter a year" />
-				<button onclick="isLeapYear()">Check</button>
-			</p>
-			<p id="leap-year-result">Check to see your result</p>
+			<div>
+				<h2>Find Largest Number in an Array</h2>
+				<input type="text" id="numbers-array" placeholder="Enter Array" value="5, 8, 2, 11, 4, 9, 0, -200" />
+				<button onclick="findLargestNumber()">Find Largest Number</button>
+				<p id="largestNumber"></p>
+			</div>
+			<div>
+				<h2>Find Longest Name in an Array</h2>
+				<input type="text" id="names-array" placeholder="Enter Array" value="Henrique, João, Ana Ana, Paulo, Francisco, Rodrigo" />
+				<button onclick="findLongestName()">Find Longest Name</button>
+				<p id="longestName"></p>
+			</div>
+			<div>
+				<h2>Calculate The Sum of the Array</h2>
+				<input type="text" id="numbers-array-sum" placeholder="Enter Array" value="52, 123, 0182, 23, -253" />
+				<button onclick="calculateSum()">Calculate Sum</button>
+				<p id="sum"></p>
+			</div>
 		</main>
 	</body>
 </html>
