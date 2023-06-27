@@ -1,45 +1,19 @@
-// Loops evitando números negativos e números maiores que 50 para não afetar o funcionamento do site
-
-function displayNumberDescending() {
-	var number = document.getElementById('number-descending').value
-	var result = document.getElementById('result-descending')
-	result.innerHTML = ''
-	if (number < 0) {
-		alert('Digite um número maior que 0')
-		return
-	} else if (number > 50) {
-		alert('Digite um número menor que 50')
-		return
-	}
-
-	for (var i = number; i >= 0; i--) {
-		result.innerHTML += i + '<br>'
-	}
+class Person {
+  constructor(name, age) {
+      this.name = name;
+      this.age = age;
+  }
 }
 
-function displayMultiplicationTable() {
-	var number = document.getElementById('number-multiplication').value
-	var result = document.getElementById('result-multiplication')
-	result.innerHTML = ''
-	for (var i = 1; i <= 10; i++) {
-		result.innerHTML += number + ' x ' + i + ' = ' + number * i + '<br>'
-	}
-}
+function displayPerson() {
+  const nameInput = document.getElementById('name');
+  const ageInput = document.getElementById('age');
 
-function displayEvenNumbers() {
-	var number = document.getElementById('number-even').value
-	var result = document.getElementById('result-even')
-	result.innerHTML = ''
-	if (number < 0) {
-		alert('Digite um número maior que 0')
-		return
-	} else if (number > 50) {
-		alert('Digite um número menor que 50')
-		return
-	}
-	for (var i = 1; i <= number; i++) {
-		if (i % 2 == 0) {
-			result.innerHTML += i + '<br>'
-		}
-	}
+  const name = nameInput.value;
+  const age = ageInput.value;
+
+  const person = new Person(name, age);
+
+  const output = document.getElementById('output');
+  output.innerHTML = `Name: ${person.name}<br />Age: ${person.age}`;
 }

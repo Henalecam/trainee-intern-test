@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Loop Structure</title>
+		<title>POO</title>
 		<script src="script.js"></script>
 	</head>
 	<body
@@ -18,29 +18,18 @@
 			background-color: wheat;
 		"
 	>
-		<h1>Loop Structure</h1>
+		<h1>POO</h1>
 		<main style="border: 10px dashed black; padding: 10px; display:flex; flex-direction:row">
-			<div style=" padding:10px;">
-				<h2>Display descending orders</h2>
-				<input type="number" id="number-descending" value="10"/>
-				<button onclick="displayNumberDescending()">Display Numbers</button>
-				<p id="result-descending"></p>
-			</div>
-			<div style=" padding:10px;">
-				<h2>
-					Display multiplication tale
-				</h2>
-				<input type="number" id="number-multiplication" value="10"/>
-				<button onclick="displayMultiplicationTable()">Display Table</button>
-				<p id="result-multiplication"></p>
-			</div>
-			<div style=" padding:10px;">
-				<h2>
-					Display Even Numbers
-				</h2>
-				<input type="number" id="number-even" value="20"/>
-				<button onclick="displayEvenNumbers()">Display Even</button>
-				<p id="result-even"></p>
+			<div>
+				<h1>Person Class</h1>
+				<label for="name">Name:</label>
+				<input type="text" id="name" value="Henrique" />
+				<br />
+				<label for="age">Age:</label>
+				<input type="number" id="age" value="20" />
+				<br />
+				<button onclick="displayPerson()">Display Person</button>
+				<div id="output"></div>
 			</div>
 		</main>
 	</body>
