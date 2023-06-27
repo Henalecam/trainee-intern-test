@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Array Test</title>
+		<title>Loop Structure</title>
 		<script src="script.js"></script>
 	</head>
 	<body
@@ -18,25 +18,29 @@
 			background-color: wheat;
 		"
 	>
-		<h1>Array Test</h1>
-		<main style="border: 10px dashed black; padding: 10px;">
-			<div>
-				<h2>Find Largest Number in an Array</h2>
-				<input type="text" id="numbers-array" placeholder="Enter Array" value="5, 8, 2, 11, 4, 9, 0, -200" />
-				<button onclick="findLargestNumber()">Find Largest Number</button>
-				<p id="largestNumber"></p>
+		<h1>Loop Structure</h1>
+		<main style="border: 10px dashed black; padding: 10px; display:flex; flex-direction:row">
+			<div style=" padding:10px;">
+				<h2>Display descending orders</h2>
+				<input type="number" id="number-descending" value="10"/>
+				<button onclick="displayNumberDescending()">Display Numbers</button>
+				<p id="result-descending"></p>
 			</div>
-			<div>
-				<h2>Find Longest Name in an Array</h2>
-				<input type="text" id="names-array" placeholder="Enter Array" value="Henrique, João, Ana Ana, Paulo, Francisco, Rodrigo" />
-				<button onclick="findLongestName()">Find Longest Name</button>
-				<p id="longestName"></p>
+			<div style=" padding:10px;">
+				<h2>
+					Display multiplication tale
+				</h2>
+				<input type="number" id="number-multiplication" value="10"/>
+				<button onclick="displayMultiplicationTable()">Display Table</button>
+				<p id="result-multiplication"></p>
 			</div>
-			<div>
-				<h2>Calculate The Sum of the Array</h2>
-				<input type="text" id="numbers-array-sum" placeholder="Enter Array" value="52, 123, 0182, 23, -253" />
-				<button onclick="calculateSum()">Calculate Sum</button>
-				<p id="sum"></p>
+			<div style=" padding:10px;">
+				<h2>
+					Display Even Numbers
+				</h2>
+				<input type="number" id="number-even" value="20"/>
+				<button onclick="displayEvenNumbers()">Display Even</button>
+				<p id="result-even"></p>
 			</div>
 		</main>
 	</body>
